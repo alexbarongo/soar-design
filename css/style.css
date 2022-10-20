@@ -1,0 +1,359 @@
+:root{
+  --main-bg-color:  #000000;
+  --main-fnt-family: Century Gothic;
+  --main-txt-color: #000;
+  --container-width: 90%;
+  --sec-color:  #33CCCC;
+  --thd-color: #FFB8B1;
+  --fth-color:  #A3E1DC;
+  --ffth-color: #B5EAD6;
+  --six-color: #97C1A9;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  color: var(--sec-color);
+}
+
+.small{
+  color: var(--sec-color);
+  font-size: 15px;
+}
+.big{
+  color: var(--sec-color);
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+a{
+  color: var(--six-color);
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  font-size: 12px;
+  background-color: var(--six-color);
+  padding-bottom: 40px;
+  clip-path: polygon(
+    0% 0%, 100% 0%, 100% calc(100% - 40px), 0% 100%
+    );
+}
+
+.header {
+  width: 100%;
+  color: #000000;
+  font-family: var(--main-fnt-family);
+  font-weight: bold;
+  padding: 2px;  
+}
+
+.header ul li{
+  list-style: none;
+  display: inline-grid;
+  margin-left: 12%;
+}
+.header ul li a {
+  color: var(--main-txt-color);
+  border-color: var(--fth-color);
+  border-radius: 20px; 
+  text-decoration: none;
+  padding: 5px;
+  
+}
+
+.header ul li a:hover{
+  color: var(--thd-color);
+  border-radius: 20px;
+  background-color: #FFF;
+}
+
+section{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.heading{
+  line-height: 10px;
+  color: var(--six-color);
+  letter-spacing: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.heading h1{
+  font-family: Century Gothic;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.heading h3{
+  font-family: Century Gothic;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.heading img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border-width: 2px;
+  border: 2px solid var(--sec-color);
+  padding: 20px; 
+  float: right; 
+}
+
+.introduction {
+  color: #FFF;
+  font-family: Century Gothic;
+  font-size: 1em;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+button{
+  color: var(--main-txt-color);
+  font-family: var(--main-fnt-family);
+  background: #FFFFFFFF;
+  border: 3px solid var(--sec-color);
+  padding: 5px;
+  margin: 15px;
+  border-radius: 20px;
+}
+
+button a{
+  color: var(--main-txt-color);
+}
+
+button span{
+  color: var(--thd-color);
+}
+
+button:hover{
+  background: var(--thd-color);
+  color: #FFF;
+  border: 2px solid var(--sec-color); 
+  font-weight: bold;
+}
+
+.top {
+  font-family: var(--main-fnt-family);
+  font-weight: bolder;
+  color: var(--six-color);
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin-left: 10px;
+  width: 45%;
+  border-bottom: 2px solid var(--sec-color)
+}
+
+#main{
+  font-family: var(--main-fnt-family);
+  width: 100%;
+  padding: 10px;
+  margin-left: 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main h2{
+  padding: 10px;
+  font-size: 15px;
+  background: var(--thd-color);
+  width: 100px;
+  margin-left: 20%;
+  margin-right: 30%;
+  border: 3px solid var(--sec-color);
+  border-radius: 30px;
+}
+.main h3{
+  color: #FFF;
+  background: var(--six-color);
+  font-size: 12px;
+  width:40px;
+  padding: 5px;
+  border: 2px solid #FFF;
+  border-radius: 20px;
+  position: relative;
+  left: 42%;
+  bottom: 48px;
+}
+
+footer{
+  width: 100%;
+  background: var(--six-color);
+  padding: 20px 20px 20px 20px;
+  clip-path: polygon(
+    0% calc(100% - 190px), 100% 0%, 100% 100%, 0% 100%
+    );
+}
+
+#ftr h2{
+  padding-top: 20px;
+  font-family: var(--main-fnt-family);
+  font-weight: bolder;
+  font-size: 20px;
+}
+.add{
+  font-family: var(--main-fnt-family);
+  font-size: 10px;
+}
+.add ul li{
+  text-decoration: none;
+  list-style: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.add ul li span{
+  color: #FFF;
+}
+
+.social{
+  font-size: 20px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.slogan{
+  color: var(--thd-color);
+  font-family: var(--main-fnt-family);
+  text-align: center;
+}
+
+.box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.box h3{
+  color: #FFF;
+}
+
+main{
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+.main-container{
+  font-family: var(--main-fnt-family);
+  color: #FFF;
+  display: inline-grid;
+
+}
+
+.main-container h2{
+  text-align: center;
+  color: var(--thd-color);
+  font-size: 30px;
+  font-weight: bolder;
+  border-bottom: 2px solid var(--six-color);
+}
+
+.main-service{
+  margin-top: 2%;
+  color: #FFF;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  
+}
+
+.services{
+  border: 2px solid var(--thd-color);
+  border-radius: 40px;
+  font-size: 12px;
+  width: 200px;
+  height: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: grid;
+  grid-gap: 1px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.services h3{
+  text-align: center;
+}
+
+.sample-container{
+  margin-top: 5%;
+  font-family: var(--main-fnt-family);
+  color: var(--thd-color);
+  display: inline-grid;
+  text-align: center;
+}
+
+.sample-container h2{
+  text-align: center;
+  color: var(--thd-color);
+  font-size: 30px;
+  font-weight: bolder;
+  border-bottom: 2px solid var(--six-color);
+}
+.main-sample{
+  color: var(--thd-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.sample h3{
+  color: var(--six-color);
+  font-size: 12px;
+  text-align: center;
+}
+.sample img{
+  width: 200px;
+  height: 200px;
+  border-radius: 40px;
+}
+
+#projects{
+  font-family: var(--main-fnt-family);
+  width: 1024px;
+}
+
+.pj{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pj h2{
+  text-align: center;
+  color: var(--thd-color);
+  font-size: 30px;
+  font-weight: bolder;
+  border-bottom: 2px solid var(--six-color);
+}
+.pj-img{
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 20px; 
+  margin-left: 30px;
+}
+
+.libry{
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.libry-bth{
+  width: 300px;
+  height: 425px;
+  border-radius: 10px;
+}
